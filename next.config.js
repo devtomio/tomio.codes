@@ -32,7 +32,7 @@ module.exports = withBundleAnalyzer(
             },
             {
                 source: '/twitter',
-                destination: 'https://twitter.com/tomiocodes',
+                destination: 'https://twitter.com/devtomio',
                 permanent: false,
             },
         ],
