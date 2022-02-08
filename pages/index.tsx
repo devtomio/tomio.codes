@@ -14,7 +14,7 @@ const Home = () => (
         <div className="fullscreen">
             <div
                 className="background"
-                style={{ backgroundImage: 'url(/background.jpg)', width: '100%', height: '1024px' }}
+                style={{ backgroundImage: 'url(/bg.png)', width: '100%', height: '1024px' }}
             ></div>
             <div className="center-object">
                 <div className="container">
