@@ -23,7 +23,7 @@ const App = ({ Component, pageProps }: AppProps) => (
 
             <title>Tomio</title>
             <meta name="description" content="The personal website of Tomio. https://github.com/1chiSensei" />
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="/pfp.jpg" />
             <link rel="manifest" href="/manifest.json" />
             <meta charSet="UTF-8" />
 
@@ -177,7 +177,7 @@ landscape)"
             <meta name="robots" content="index, follow" />
             <meta name="author" content="Yoshida Tomio" />
             <meta name="language" content="English" />
-            <meta content="https://tomio.codes/profile.jpg" property="og:image" />
+            <meta content="https://tomio.codes/pfp.jpg" property="og:image" />
             <meta content="Tomio" property="og:title" />
 
             <meta content="Tomio's personal homepage." property="og:description" />
@@ -195,7 +195,7 @@ landscape)"
             <meta property="twitter:url" content="https://tomio.codes/" />
             <meta property="twitter:title" content="Tomio" />
             <meta property="twitter:description" content="Tomio's personal homepage." />
-            <meta property="twitter:image" content="https://tomio.codes/profile.jpg" />
+            <meta property="twitter:image" content="https://tomio.codes/pfp.jpg" />
         </Head>
 
         <Component {...pageProps} />
