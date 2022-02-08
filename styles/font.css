@@ -17,4 +17,5 @@
 
 .quote {
     font-family: 'Patrick Hand', cursive;
+    white-space: normal;
 }
