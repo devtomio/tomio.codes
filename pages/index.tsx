@@ -1,6 +1,13 @@
 import Script from 'next/script';
 import Link from 'next/link';
 
+export async function getServerSideProps() {
+    const res = await fetch('https://animechan.vercel.app/api/random');
+    const data = await res.json();
+
+    return { props: { data } };
+}
+
 const scrollToEl = (getID: string) => {
     const id = getID.replaceAll('#', '');
     const el = document.getElementById(id);
@@ -9,7 +16,7 @@ const scrollToEl = (getID: string) => {
     history.pushState(null, null!, `#${id}`);
 };
 
-const Home = () => (
+const Home = ({ data }: { data: Record<string, string> }) => (
     <>
         <div className="fullscreen">
             <div
@@ -24,8 +31,8 @@ const Home = () => (
                         </div>
                         <div className="unset">
                             <h1 className="title genshin-text">Tomio</h1>
-                            <p className="undertitle monospace" style={{ fontSize: 'x-small'}}>
-                                <i className="emoji googlecat"></i> A weeb dev.
+                            <p className="undertitle quote" style={{ fontSize: 'x-small' }}>
+                                <i className="emoji googlecat"></i> {`"${data.quote}" — ${data.character}`}
                             </p>
                         </div>
                     </section>
