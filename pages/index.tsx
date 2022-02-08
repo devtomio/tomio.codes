@@ -31,7 +31,7 @@ const Home = ({ data }: { data: Record<string, string> }) => (
                         </div>
                         <div className="unset">
                             <h1 className="title genshin-text">Tomio</h1>
-                            <p className="undertitle quote" style={{ fontSize: 'small' }}>
+                            <p className="undertitle quote" style={{ fontSize: '10.5px' }}>
                                 <i className="emoji googlecat"></i> {`"${data.quote}" — ${data.character}`}
                             </p>
                         </div>
