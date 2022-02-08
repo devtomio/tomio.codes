@@ -23,7 +23,7 @@ const Home = () => (
                             <img src="/profile.jpg" draggable={false} className="image-title" alt="Avatar of Tomio" />
                         </div>
                         <div className="unset">
-                            <h1 className="title monospace">Yoshida Tomio</h1>
+                            <h1 className="title monospace">Tomio</h1>
                             <p className="undertitle monospace">
                                 <i className="emoji googlecat"></i> A weeb dev.
                             </p>
@@ -38,9 +38,6 @@ const Home = () => (
                         </a>
                         <a href="/twitter" className="btn twitter-dropshadow animation hover">
                             Twitter
-                        </a>
-                        <a href="/rest" className="btn lavender-dropshadow animation hover">
-                            Rest API
                         </a>
                         <a href="mailto:mail@tomio.codes" className="btn emerald-dropshadow animation hover">
                             Email
@@ -70,10 +67,10 @@ const Home = () => (
                 </h1>
                 <div className="info-container">
                     <p>
-                        Hello, my name is <span className="turquoise-text">Tomio</span>, but known as{' '}
-                        <span className="turquoise-text">1chiSensei</span> over the internet. I&#39;m a Developer that
+                        Hello, my name is <span className="turquoise-text">Tomio</span>, but you can also call me{' '}
+                        <span className="turquoise-text">jez</span> if you'd like. I&#39;m a Developer that
                         likes anime. Current coding languages I know well enough are{' '}
-                        <span className="turquoise-text">HTML, CSS, JavaScript, Python, TypeScript, SQL</span> and{' '}
+                        <span className="turquoise-text">HTML, CSS, JavaScript, Python, TypeScript, SQL, Rust, C++</span> and{' '}
                         <span className="turquoise-text">SCSS</span>.
                     </p>
                 </div>
@@ -102,17 +99,6 @@ const Home = () => (
                         <Link href="https://github.com/Shukaaku/materialicons.css">materialicons.css</Link> provides
                         some icons for your website.
                     </p>
-                </div>
-            </div>
-            <div className="box-container">
-                <h1 className="title turquoise-text">
-                    <i className="emoji congablob"></i> Activity:
-                </h1>
-                <div className="info-container">
-                    <embed
-                        src="https://wakatime.com/share/@6e7df88f-a5a8-45bb-9d7d-c930011dd0ce/a73d6560-d63b-4e93-a651-353cb008c482.svg"
-                        style={{ width: '100%' }}
-                    ></embed>
                 </div>
             </div>
             <div className="box-container">
