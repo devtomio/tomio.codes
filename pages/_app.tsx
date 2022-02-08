@@ -1,3 +1,4 @@
+import '../styles/font.css';
 import '../styles/style.css';
 import '../styles/modesta.css';
 import '../styles/normalize.css';
