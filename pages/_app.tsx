@@ -21,8 +21,8 @@ const App = ({ Component, pageProps }: AppProps) => (
                 }}
             />
 
-            <title>Yoshida Tomio</title>
-            <meta name="description" content="The personal website of Yoshida Tomio. https://github.com/1chiSensei" />
+            <title>Tomio</title>
+            <meta name="description" content="The personal website of Tomio. https://github.com/1chiSensei" />
             <link rel="icon" href="/favicon.ico" />
             <link rel="manifest" href="/manifest.json" />
             <meta charSet="UTF-8" />
@@ -178,10 +178,10 @@ landscape)"
             <meta name="author" content="Yoshida Tomio" />
             <meta name="language" content="English" />
             <meta content="https://tomio.codes/profile.jpg" property="og:image" />
-            <meta content="Yoshida Tomio" property="og:title" />
+            <meta content="Tomio" property="og:title" />
 
-            <meta content="Yoshida Tomio's personal homepage." property="og:description" />
-            <meta content="Yoshida Tomio's personal homepage." name="description" />
+            <meta content="Tomio's personal homepage." property="og:description" />
+            <meta content="Tomio's personal homepage." name="description" />
 
             <meta name="revisit-after" content="2 days" />
             <meta name="keywords" content="1chi, 1chiSensei, Yoshida Tomio, Developer, Github" />
@@ -189,12 +189,12 @@ landscape)"
             <meta property="og:locale" content="en_US" />
             <link rel="canonical" href="https://tomio.codes/" />
             <meta property="og:url" content="https://tomio.codes/" />
-            <meta property="og:site_name" content="Yoshida Tomio" />
+            <meta property="og:site_name" content="Tomio" />
 
             <meta property="twitter:card" content="summary_large_image" />
             <meta property="twitter:url" content="https://tomio.codes/" />
-            <meta property="twitter:title" content="Yoshida Tomio" />
-            <meta property="twitter:description" content="Yoshida Tomio's personal homepage." />
+            <meta property="twitter:title" content="Tomio" />
+            <meta property="twitter:description" content="Tomio's personal homepage." />
             <meta property="twitter:image" content="https://tomio.codes/profile.jpg" />
         </Head>
 
