@@ -24,7 +24,7 @@ const Home = () => (
                         </div>
                         <div className="unset">
                             <h1 className="title genshin-text">Tomio</h1>
-                            <p className="undertitle monospace" style="font-size: x-small">
+                            <p className="undertitle monospace" style={{ fontSize: 'x-small'}}>
                                 <i className="emoji googlecat"></i> A weeb dev.
                             </p>
                         </div>
