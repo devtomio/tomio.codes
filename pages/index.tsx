@@ -20,7 +20,7 @@ const Home = () => (
                 <div className="container">
                     <section className="me unset">
                         <div className="avatar-container">
-                            <img src="/profile.jpg" draggable={false} className="image-title" alt="Avatar of Tomio" />
+                            <img src="/pfp.jpg" draggable={false} className="image-title" alt="Avatar of Tomio" />
                         </div>
                         <div className="unset">
                             <h1 className="title monospace">Tomio</h1>
