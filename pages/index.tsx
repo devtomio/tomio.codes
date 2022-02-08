@@ -23,14 +23,14 @@ const Home = () => (
                             <img src="/pfp.jpg" draggable={false} className="image-title" alt="Avatar of Tomio" />
                         </div>
                         <div className="unset">
-                            <h1 className="title monospace">Tomio</h1>
+                            <h1 className="title genshin-text">Tomio</h1>
                             <p className="undertitle monospace">
                                 <i className="emoji googlecat"></i> A weeb dev.
                             </p>
                         </div>
                     </section>
                     <div className="buttons">
-                        <a href="/discord" className="btn discord-dropshadow animation hover genshin-text">
+                        <a href="/discord" className="btn discord-dropshadow animation hover">
                             Discord
                         </a>
                         <a href="/github" className="btn github-dropshadow animation hover">
