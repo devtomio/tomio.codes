@@ -33,7 +33,7 @@ const App = ({ Component, pageProps }: AppProps) => (
             <meta name="apple-mobile-web-app-capable" content="yes" />
 
             <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
             <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
 
             <link
