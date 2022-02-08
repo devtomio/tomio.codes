@@ -23,8 +23,8 @@ const Home = () => (
                             <img src="/pfp.jpg" draggable={false} className="image-title" alt="Avatar of Tomio" />
                         </div>
                         <div className="unset">
-                            <h1 className="title genshin-text">Tomio</h1>
-                            <p className="undertitle monospace">
+                            <h1 className="title monospace">Tomio</h1>
+                            <p className="undertitle genshin-text">
                                 <i className="emoji googlecat"></i> A weeb dev.
                             </p>
                         </div>
