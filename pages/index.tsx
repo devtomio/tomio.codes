@@ -140,7 +140,7 @@ const Home = () => (
                     ></path>
                 </svg>
                 <br />
-                <Link href="https://github.com/1chiSensei/tomio.cdes/blob/main/LICENSE">LICENSE</Link> | Yoshida Tomio |{' '}
+                <Link href="https://github.com/1chiSensei/tomio.cdes/blob/main/LICENSE">LICENSE</Link> | Tomio © 2022 |{' '}
                 <Link href="https://github.com/1chiSensei/tomio.codes">Source</Link>
             </p>
         </footer>
