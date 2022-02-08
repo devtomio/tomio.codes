@@ -24,13 +24,13 @@ const Home = () => (
                         </div>
                         <div className="unset">
                             <h1 className="title monospace">Tomio</h1>
-                            <p className="undertitle genshin-text">
+                            <p className="undertitle monospace">
                                 <i className="emoji googlecat"></i> A weeb dev.
                             </p>
                         </div>
                     </section>
                     <div className="buttons">
-                        <a href="/discord" className="btn discord-dropshadow animation hover">
+                        <a href="/discord" className="btn discord-dropshadow animation hover genshin-text">
                             Discord
                         </a>
                         <a href="/github" className="btn github-dropshadow animation hover">
