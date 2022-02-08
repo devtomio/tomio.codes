@@ -30,16 +30,16 @@ const Home = () => (
                         </div>
                     </section>
                     <div className="buttons">
-                        <a href="/discord" className="btn discord-dropshadow animation hover">
+                        <a href="/discord" className="btn discord-dropshadow animation hover fira">
                             Discord
                         </a>
-                        <a href="/github" className="btn github-dropshadow animation hover">
+                        <a href="/github" className="btn github-dropshadow animation hover fira">
                             GitHub
                         </a>
-                        <a href="/twitter" className="btn twitter-dropshadow animation hover">
+                        <a href="/twitter" className="btn twitter-dropshadow animation hover fira">
                             Twitter
                         </a>
-                        <a href="mailto:mail@tomio.codes" className="btn emerald-dropshadow animation hover">
+                        <a href="mailto:mail@tomio.codes" className="btn emerald-dropshadow animation hover fira">
                             Email
                         </a>
                     </div>
