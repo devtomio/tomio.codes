@@ -29,7 +29,7 @@ const notify = (text: string, icon: string) => toast(text, {
     },
 });
 
-const Home = ({ data }: { data: Record<string, any> }) => (
+const Home = ({ data }: { data: Record<string, string | Blob> }) => (
     <>
         <div className="fullscreen">
             <div
