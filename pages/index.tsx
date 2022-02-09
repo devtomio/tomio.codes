@@ -1,3 +1,5 @@
+/// <reference path="../types.d.ts" />
+
 import Script from 'next/script';
 import Link from 'next/link';
 import toast, { Toaster } from 'react-hot-toast';
