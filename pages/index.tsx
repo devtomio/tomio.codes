@@ -2,7 +2,13 @@ import Script from 'next/script';
 import Link from 'next/link';
 import toast, { Toaster } from 'react-hot-toast';
 
-export async function getServerSideProps() {
+interface Props {
+    quote: string;
+    character: string;
+    pfp: Blob;
+}
+
+export async function getServerSideProps(): Promise<Props> {
     const res = await fetch('https://animechan.vercel.app/api/random');
     const img = await fetch('/pfp.jpg');
     const blob = await img.blob();
@@ -29,7 +35,7 @@ const notify = (text: string, icon: string) => toast(text, {
     },
 });
 
-const Home = ({ data }: { data: Record<string, string | Blob> }) => (
+const Home = ({ data }: Props) => (
     <>
         <div className="fullscreen">
             <div
