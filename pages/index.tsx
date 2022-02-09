@@ -4,9 +4,11 @@ import toast, { Toaster } from 'react-hot-toast';
 
 export async function getServerSideProps() {
     const res = await fetch('https://animechan.vercel.app/api/random');
+    const img = await fetch('/pfp.jpg');
+    const blob = await img.blob();
     const data = await res.json();
 
-    return { props: { data } };
+    return { props: { ...data, pfp: blob } };
 }
 
 const scrollToEl = (getID: string) => {
@@ -27,7 +29,7 @@ const notify = (text: string, icon: string) => toast(text, {
     },
 });
 
-const Home = ({ data }: { data: Record<string, string> }) => (
+const Home = ({ data }: { data: Record<string, any> }) => (
     <>
         <div className="fullscreen">
             <div
@@ -39,8 +41,10 @@ const Home = ({ data }: { data: Record<string, string> }) => (
                     <section className="me unset">
                         <div className="avatar-container">
                             <img src="/pfp.jpg" draggable={false} className="image-title" alt="Avatar of Tomio" onClick={() => {
+                                const data = new ClipboardItem({ 'image/jpg': data.pfp });
+
                                 notify('Copied profile picture!', '🖼️');
-                                navigator.clipboard.writeText('https://tomio.codes/pfp.jpg');
+                                navigator.clipboard.write([data]);
                             }} />
                         </div>
                         <div className="unset">
