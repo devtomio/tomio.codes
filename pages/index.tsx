@@ -22,7 +22,8 @@ const notify = (text: string, icon: string) => toast(text, {
     style: {
         borderRadius: '10px',
         background: '#333', 
-        color: '#fff', 
+        color: '#fff',
+        fontFamily: 'Patrick Hand',
     },
 });
 
