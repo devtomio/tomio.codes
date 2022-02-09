@@ -12,7 +12,7 @@ interface Props {
 
 export async function getServerSideProps(): Promise<Props> {
     const res = await fetch('https://animechan.vercel.app/api/random');
-    const img = await fetch('/pfp.jpg');
+    const img = await fetch('https:/tomio.codes/pfp.jpg');
     const blob = await img.blob();
     const data = await res.json();
 
