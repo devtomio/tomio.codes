@@ -69,8 +69,8 @@ const Home = ({ data }: { data: Record<string, string> }) => (
 
         <section className="container" id="information">
             <div className="box-container">
-                <h1 className="title turquoise-text">
-                    <i className="emoji blobbounce genshin-text"></i> Information:
+                <h1 className="title turquoise-text genshin-text">
+                    <i className="emoji blobbounce"></i> Information:
                 </h1>
                 <div className="info-container">
                     <p>
@@ -110,7 +110,7 @@ const Home = ({ data }: { data: Record<string, string> }) => (
             </div>
             <div className="box-container">
                 <h1 className="title turquoise-text genshin-text">
-                    <i className="emoji blobglitch"></i> Join my Discord Server!
+                    <i className="emoji blobglitch"></i> Discord Server
                 </h1>
                 <div className="info-container center-flex">
                     <iframe
