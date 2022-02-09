@@ -3,6 +3,7 @@
 import Script from 'next/script';
 import Link from 'next/link';
 import toast, { Toaster } from 'react-hot-toast';
+import type { GetServerSideProps } from 'next';
 
 interface Props {
     quote: string;
@@ -10,7 +11,12 @@ interface Props {
     pfp: Blob;
 }
 
-export async function getServerSideProps(): Promise<Props> {
+export const getServerSideProps: GetServerSideProps = ({ res }): Promise<Props> => {
+    res.setHeader(
+        'Cache-Control',
+        'public, s-maxage=10, stale-while-revalidate=59'
+    );
+
     const res = await fetch('https://animechan.vercel.app/api/random');
     const img = await fetch('https:/tomio.codes/pfp.png');
     const blob = await img.blob();
