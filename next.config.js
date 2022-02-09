@@ -38,6 +38,9 @@ module.exports = withBundleAnalyzer(
         ],
         eslint: {
             ignoreDuringBuilds: true,
-       }, 
+        },
+        experimental: {
+            outputStandalone: true,
+        }, 
     }),
 );
