@@ -38,7 +38,10 @@ const Home = ({ data }: { data: Record<string, string> }) => (
                 <div className="container">
                     <section className="me unset">
                         <div className="avatar-container">
-                            <img src="/pfp.jpg" draggable={false} className="image-title" alt="Avatar of Tomio" onClick={() => notify('Copied profile picture!', '🖼️')} />
+                            <img src="/pfp.jpg" draggable={false} className="image-title" alt="Avatar of Tomio" onClick={() => {
+                                notify('Copied profile picture!', '🖼️')
+                                navigator.clipboard.writeText('https://tomio.codes/pfp.jpg'
+                            }} />
                         </div>
                         <div className="unset">
                             <h1 className="title genshin-text">Tomio</h1>
