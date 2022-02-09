@@ -1,5 +1,6 @@
 import Script from 'next/script';
 import Link from 'next/link';
+import toast, { Toaster } from 'react-hot-toast';
 
 export async function getServerSideProps() {
     const res = await fetch('https://animechan.vercel.app/api/random');
@@ -16,6 +17,15 @@ const scrollToEl = (getID: string) => {
     history.pushState(null, null!, `#${id}`);
 };
 
+const notify = (text: string, icon: string) => toast(text, {
+    icon,
+    style: {
+        borderRadius: '10px',
+        background: '#333', 
+        color: '#fff', 
+    },
+});
+
 const Home = ({ data }: { data: Record<string, string> }) => (
     <>
         <div className="fullscreen">
@@ -27,7 +37,7 @@ const Home = ({ data }: { data: Record<string, string> }) => (
                 <div className="container">
                     <section className="me unset">
                         <div className="avatar-container">
-                            <img src="/pfp.jpg" draggable={false} className="image-title" alt="Avatar of Tomio" />
+                            <img src="/pfp.jpg" draggable={false} className="image-title" alt="Avatar of Tomio" onClick={() => notify('Copied profile picture!', '🖼️'))} />
                         </div>
                         <div className="unset">
                             <h1 className="title genshin-text">Tomio</h1>
@@ -153,6 +163,7 @@ const Home = ({ data }: { data: Record<string, string> }) => (
         </footer>
 
         <Script src="/js/script.js" type="text/javascript" />
+        <Toaster position="top-right" reverseOrder={false} />
     </>
 );
 
