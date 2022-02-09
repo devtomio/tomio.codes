@@ -13,7 +13,8 @@
         "next": "latest",
         "next-pwa": "latest",
         "react": "latest",
-        "react-dom": "latest"
+        "react-dom": "latest",
+        "react-hot-toast": "latest"
     },
     "devDependencies": {
         "@types/react": "17.0.11",
