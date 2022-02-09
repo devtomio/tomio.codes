@@ -47,7 +47,7 @@ const Home = ({ data }: { data: Props }) => (
                     <section className="me unset">
                         <div className="avatar-container">
                             <img src="/pfp.jpg" draggable={false} className="image-title" alt="Avatar of Tomio" onClick={() => {
-                                const data = new ClipboardItem({ 'image/jpg': data.pfp });
+                                const data: any = new ClipboardItem({ 'image/jpg': data.pfp });
 
                                 notify('Copied profile picture!', '🖼️');
                                 navigator.clipboard.write([data]);
