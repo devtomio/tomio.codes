@@ -12,7 +12,7 @@ interface Props {
 }
 
 // @ts-expect-error
-export const getServerSideProps: GetServerSideProps = ({ res }): Promise<Props> => {
+export const getServerSideProps: GetServerSideProps = async ({ res }): Promise<Props> => {
     res.setHeader(
         'Cache-Control',
         'public, s-maxage=10, stale-while-revalidate=59'
