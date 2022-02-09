@@ -14,7 +14,7 @@ export async function getServerSideProps(): Promise<Props> {
     const blob = await img.blob();
     const data = await res.json();
 
-    return { props: { ...data, pfp: blob } } as Props;
+    return { props: { ...data, pfp: blob } } as unknown as Props;
 }
 
 const scrollToEl = (getID: string) => {
