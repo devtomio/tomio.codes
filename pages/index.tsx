@@ -11,6 +11,7 @@ interface Props {
     pfp: Blob;
 }
 
+// @ts-ignore
 export const getServerSideProps: GetServerSideProps = ({ res }): Promise<Props> => {
     res.setHeader(
         'Cache-Control',
