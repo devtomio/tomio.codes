@@ -35,7 +35,7 @@ const notify = (text: string, icon: string) => toast(text, {
     },
 });
 
-const Home = ({ data }: Props) => (
+const Home = ({ data }: { data: Props }) => (
     <>
         <div className="fullscreen">
             <div
