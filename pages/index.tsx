@@ -49,10 +49,10 @@ const Home = ({ data }: { data: Props }) => (
                     <section className="me unset">
                         <div className="avatar-container">
                             <img src="/pfp.jpg" draggable={false} className="image-title" alt="Avatar of Tomio" onClick={() => {
-                                const data: any = new ClipboardItem({ 'image/jpg': data.pfp });
+                                const image = new ClipboardItem({ 'image/jpg': data.pfp });
 
                                 notify('Copied profile picture!', '🖼️');
-                                navigator.clipboard.write([data]);
+                                navigator.clipboard.write([image]);
                             }} />
                         </div>
                         <div className="unset">
