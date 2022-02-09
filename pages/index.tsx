@@ -11,17 +11,17 @@ interface Props {
     pfp: Blob;
 }
 
-// @ts-ignore
+// @ts-expect-error
 export const getServerSideProps: GetServerSideProps = ({ res }): Promise<Props> => {
     res.setHeader(
         'Cache-Control',
         'public, s-maxage=10, stale-while-revalidate=59'
     );
 
-    const res = await fetch('https://animechan.vercel.app/api/random');
+    const resq = await fetch('https://animechan.vercel.app/api/random');
     const img = await fetch('https:/tomio.codes/pfp.png');
     const blob = await img.blob();
-    const data = await res.json();
+    const data = await resq.json();
 
     return { props: { data: { ...data, pfp: blob } } } as unknown as Props;
 }
