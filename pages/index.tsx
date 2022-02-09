@@ -12,7 +12,7 @@ interface Props {
 
 export async function getServerSideProps(): Promise<Props> {
     const res = await fetch('https://animechan.vercel.app/api/random');
-    const img = await fetch('https:/tomio.codes/pfp.jpg');
+    const img = await fetch('https:/tomio.codes/pfp.png');
     const blob = await img.blob();
     const data = await res.json();
 
@@ -49,7 +49,7 @@ const Home = ({ data }: { data: Props }) => (
                     <section className="me unset">
                         <div className="avatar-container">
                             <img src="/pfp.jpg" draggable={false} className="image-title" alt="Avatar of Tomio" onClick={() => {
-                                const image = new ClipboardItem({ 'image/jpg': data.pfp });
+                                const image = new ClipboardItem({ 'image/png': data.pfp });
 
                                 notify('Copied profile picture!', '🖼️');
                                 navigator.clipboard.write([image]);
