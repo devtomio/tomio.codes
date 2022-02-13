@@ -186,6 +186,8 @@ const Home = ({ data }: { data: Props }) => (
         </footer>
 
         <Script src="/js/script.js" type="text/javascript" />
+        <Script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js" type="text/javascript" />
+
         <Toaster position="top-right" reverseOrder={false} />
     </>
 );
