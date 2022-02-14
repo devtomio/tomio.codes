@@ -9,17 +9,16 @@ import type { GetServerSideProps } from 'next';
 interface Props {
     quote: string;
     character: string;
-    pfp: Blob;
+    anime: string;
 }
 
-// @ts-expect-error
-export const getServerSideProps: GetServerSideProps = async ({ res }): Promise<Props> => {
+export const getServerSideProps: GetServerSideProps = async ({ res }): Promise<{ props: Props }> => {
     res.setHeader('Cache-Control', 'public, s-maxage=10, stale-while-revalidate=59');
 
     const resq = await fetch('https://animechan.vercel.app/api/random');
     const data = await resq.json();
 
-    return { props: { data } } as unknown as Props;
+    return { props: { ...data } };
 };
 
 const scrollToEl = (getID: string) => {
@@ -41,7 +40,7 @@ const notify = (text: string, icon: string) =>
         },
     });
 
-const Home = ({ data }: { data: Props }) => (
+const Home = ({ quote, character, anime }: Props) => (
     <>
         <div className="fullscreen">
             <div
@@ -66,7 +65,7 @@ const Home = ({ data }: { data: Props }) => (
                         <div className="unset">
                             <h1 className="title genshin-text">Tomio</h1>
                             <p className="undertitle quote" style={{ fontSize: '13.5px', width: '25em' }}>
-                                <i className="emoji googlecat"></i> {`"${data.quote}" — ${data.character}`}
+                                <i className="emoji googlecat"></i> {`"${quote}" — ${character} (${anime})`}
                             </p>
                         </div>
                     </section>
