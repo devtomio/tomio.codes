@@ -1,3 +1,4 @@
+// eslint-disable-next-line spaced-comment
 /// <reference path="../types.d.ts" />
 
 import Script from 'next/script';
@@ -13,10 +14,7 @@ interface Props {
 
 // @ts-expect-error
 export const getServerSideProps: GetServerSideProps = async ({ res }): Promise<Props> => {
-    res.setHeader(
-        'Cache-Control',
-        'public, s-maxage=10, stale-while-revalidate=59'
-    );
+    res.setHeader('Cache-Control', 'public, s-maxage=10, stale-while-revalidate=59');
 
     const resq = await fetch('https://animechan.vercel.app/api/random');
     const img = await fetch('https:/tomio.codes/pfp.png');
@@ -24,7 +22,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }): Promise<P
     const data = await resq.json();
 
     return { props: { data: { ...data, pfp: blob } } } as unknown as Props;
-}
+};
 
 const scrollToEl = (getID: string) => {
     const id = getID.replaceAll('#', '');
@@ -34,15 +32,16 @@ const scrollToEl = (getID: string) => {
     history.pushState(null, null!, `#${id}`);
 };
 
-const notify = (text: string, icon: string) => toast(text, {
-    icon,
-    style: {
-        borderRadius: '10px',
-        background: '#333', 
-        color: '#fff',
-        fontFamily: 'Patrick Hand',
-    },
-});
+const notify = (text: string, icon: string) =>
+    toast(text, {
+        icon,
+        style: {
+            borderRadius: '10px',
+            background: '#333',
+            color: '#fff',
+            fontFamily: 'Patrick Hand',
+        },
+    });
 
 const Home = ({ data }: { data: Props }) => (
     <>
@@ -55,12 +54,18 @@ const Home = ({ data }: { data: Props }) => (
                 <div className="container">
                     <section className="me unset">
                         <div className="avatar-container">
-                            <img src="/pfp.jpg" draggable={false} className="image-title" alt="Avatar of Tomio" onClick={() => {
-                                const image = new ClipboardItem({ 'image/png': data.pfp });
+                            <img
+                                src="/pfp.jpg"
+                                draggable={false}
+                                className="image-title"
+                                alt="Avatar of Tomio"
+                                onClick={() => {
+                                    const image = new ClipboardItem({ 'image/png': data.pfp });
 
-                                notify('Copied profile picture!', '🖼️');
-                                navigator.clipboard.write([image]);
-                            }} />
+                                    notify('Copied profile picture!', '🖼️');
+                                    void navigator.clipboard.write([image]);
+                                }}
+                            />
                         </div>
                         <div className="unset">
                             <h1 className="title genshin-text">Tomio</h1>
@@ -108,10 +113,12 @@ const Home = ({ data }: { data: Props }) => (
                 <div className="info-container">
                     <p>
                         Hello, my name is <span className="turquoise-text">Tomio</span>, but you can also call me{' '}
-                        <span className="turquoise-text">jez</span> if you'd like. I&#39;m a Developer that
-                        likes anime. Current coding languages I know well enough are{' '}
-                        <span className="turquoise-text">HTML, CSS, JavaScript, Python, TypeScript, SQL, Rust, C++</span> and{' '}
-                        <span className="turquoise-text">SCSS</span>.
+                        <span className="turquoise-text">jez</span> if you&#39;d like. I&#39;m a Developer that likes
+                        anime. Current coding languages I know well enough are{' '}
+                        <span className="turquoise-text">
+                            HTML, CSS, JavaScript, Python, TypeScript, SQL, Rust, C++
+                        </span>{' '}
+                        and <span className="turquoise-text">SCSS</span>.
                     </p>
                 </div>
             </div>

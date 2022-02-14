@@ -2,6 +2,8 @@
     "extends": ["next", "next/core-web-vitals", "marine/prettier/jsx"],
     "rules": {
         "react/jsx-filename-extension": "off",
-        "@next/next/no-img-element": "off"
+        "@next/next/no-img-element": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@next/next/no-page-custom-font": "off"
     }
 }

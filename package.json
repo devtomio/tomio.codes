@@ -17,6 +17,7 @@
         "react-hot-toast": "latest"
     },
     "devDependencies": {
+        "@types/minimatch": "^3.0.5",
         "@types/react": "17.0.11",
         "@typescript-eslint/eslint-plugin": "^4.27.0",
         "@typescript-eslint/parser": "^4.27.0",

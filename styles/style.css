@@ -6,6 +6,10 @@ a:hover {
     color: rgb(15, 160, 206);
 }
 
+section.container div div.info-container p {
+    font-family: 'Roboto', monospace;
+} 
+
 .fullscreen h1.title {
     margin-bottom: 0;
     letter-spacing: 2px;

@@ -41,6 +41,6 @@ module.exports = withBundleAnalyzer(
         },
         experimental: {
             outputStandalone: true,
-        }, 
+        },
     }),
 );

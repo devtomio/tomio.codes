@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'genshin';
-    src: url('/genshin.woff2') format('woff2'),
-         url('/genshin.woff') format('woff');
+    src: url('/genshin.woff2') format('woff2'), url('/genshin.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
