@@ -35,7 +35,7 @@ const App = ({ Component, pageProps }: AppProps) => (
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
             <link
-                href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Patrick+Hand&family=Roboto&display=swap"
+                href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Patrick+Hand&family=Lora&display=swap"
                 rel="stylesheet"
             />
 
