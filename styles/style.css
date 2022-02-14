@@ -12,7 +12,7 @@ section.container div div.info-container p {
 
 div.icons.center {
     position: relative;
-    top: -50px;
+    top: -40px;
     transition: transform 0.2s;
 }
 
