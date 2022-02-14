@@ -13,10 +13,15 @@ section.container div div.info-container p {
 div.icons.center {
     position: relative;
     top: -40px;
-    transition: transform 0.2s;
+    display: flex;
 }
 
-div.icons.center:hover {
+div.icons.center div {
+    transition: transform 0.2s;
+    padding: 3px;
+}
+
+div.icons.center div:hover {
     transform: scale(1.25);
 }
 
