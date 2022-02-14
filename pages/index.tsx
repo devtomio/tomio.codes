@@ -74,7 +74,7 @@ const Home = ({ data }: { data: Props }) => (
                             </p>
                         </div>
                     </section>
-                    <div className="buttons">
+                    {/* <div className="buttons">
                         <a href="/discord" className="btn discord-dropshadow animation hover fira">
                             Discord
                         </a>
@@ -87,7 +87,7 @@ const Home = ({ data }: { data: Props }) => (
                         <a href="mailto:mail@tomio.codes" className="btn emerald-dropshadow animation hover fira">
                             Email
                         </a>
-                    </div>
+                            </div> */}
                 </div>
                 <div>
                     <a
