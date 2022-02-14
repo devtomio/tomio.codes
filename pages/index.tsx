@@ -87,7 +87,7 @@ const Home = ({ data }: { data: Props }) => (
                         </a>
                             </div> */}
                 </div>
-                <div>
+                <div className="container">
                     <a
                         href="https://www.youtube.com/channel/UCzep0xXUWcZ6SukIS1UtLHw"
                         target="_blank"
