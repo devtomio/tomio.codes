@@ -10,6 +10,16 @@ section.container div div.info-container p {
     font-family: 'Arvo', serif;
 }
 
+div.icons.center {
+    position: relative;
+    top: -50px;
+    transition: transform 0.2s;
+}
+
+div.icons.center:hover {
+    transform: scale(1.25);
+}
+
 .fullscreen h1.title {
     margin-bottom: 0;
     letter-spacing: 2px;
