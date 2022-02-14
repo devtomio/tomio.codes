@@ -87,7 +87,7 @@ const Home = ({ data }: { data: Props }) => (
                         </a>
                             </div> */}
                 </div>
-                <div className="container center">
+                <div className="center">
                     <a href="https://www.youtube.com/channel/UCzep0xXUWcZ6SukIS1UtLHw" target="_blank" rel="noreferrer">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
