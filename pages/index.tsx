@@ -46,7 +46,7 @@ const Home = ({ data }: { data: Props }) => (
         <div className="fullscreen">
             <div
                 className="background"
-                style={{ backgroundImage: 'url(/bg.png)', width: '100%', height: '1024px' }}
+                style={{ backgroundImage: 'url(/background.gif)', width: '100%', height: '1024px' }}
             ></div>
             <div className="center-object">
                 <div className="container">
