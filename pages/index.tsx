@@ -60,10 +60,8 @@ const Home = ({ data }: { data: Props }) => (
                                 className="image-title"
                                 alt="Avatar of Tomio"
                                 onClick={() => {
-                                    const image = new ClipboardItem({ 'image/png': data.pfp });
-
                                     notify('Copied profile picture!', '🖼️');
-                                    void navigator.clipboard.write([image]);
+                                    void navigator.clipboard.writeText('https://tomio.codes/pfp.jpg')
                                 }}
                             />
                         </div>
@@ -93,7 +91,6 @@ const Home = ({ data }: { data: Props }) => (
                     <a
                         href="https://www.youtube.com/channel/UCzep0xXUWcZ6SukIS1UtLHw"
                         target="_blank"
-                        style={{ padding: '0 4px' }}
                         rel="noreferrer"
                     >
                         <svg
