@@ -86,7 +86,13 @@ const Home = ({ data }: { data: Props }) => (
                             </div> */}
                 </div>
                 <div className="center icons">
-                    <a href="javascript:void(0)" onClick={() => notify('Copied discord tag!', '📘')}>
+                    <a
+                        href="javascript:void(0)"
+                        onClick={() => {
+                            notify('Copied discord tag!', '📘');
+                            void navigator.clipboard.writeText('Tomio#1265');
+                        }}
+                    >
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 71 55" fill="none">
                             <g clipPath="url(#clip0)">
                                 <path
