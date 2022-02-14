@@ -70,7 +70,7 @@ const Home = ({ quote, character, anime }: Props) => (
                         </div>
                     </section>
                 </div>
-                <div className="center icons">
+                <div className="center icons" id="icons">
                     <a
                         href="javascript:void(0)"
                         onClick={() => {
