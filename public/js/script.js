@@ -6,7 +6,7 @@ window.addEventListener('scroll', () => {
     else logo.classList.remove('arrow--scrolled');
 });
 
-if (('netscape' in window) && / rv:/.test(navigator.userAgent)) {
+if ('netscape' in window && / rv:/.test(navigator.userAgent)) {
     const el = document.getElementById('icons');
 
     el.style.top = '-30px';
