@@ -65,11 +65,11 @@ const Home = ({ quote, character, anime }: Props) => (
             <div className="fullscreen">
                 <div
                     className="background"
-                    css={css`
-                        background-image: url(/background.gif);
-                        width: 100%;
-                        height: 1024px;
-                    `}
+                    style={{
+                        backgroundImage: 'url(/background.gif)',
+                        width: '100%',
+                        height: '1024px',
+                    }}
                 ></div>
                 <div className="center-object">
                     <div className="container">
@@ -88,10 +88,13 @@ const Home = ({ quote, character, anime }: Props) => (
                             </div>
                             <div className="unset">
                                 <h1 className="title genshin-text">Tomio</h1>
-                                <p className="undertitle quote" css={css`
-                                    font-size: 13.5px;
-                                    width: 25em;
-                                `}>
+                                <p
+                                    className="undertitle quote"
+                                    css={css`
+                                        font-size: 13.5px;
+                                        width: 25em;
+                                    `}
+                                >
                                     <i className="emoji googlecat"></i> {`"${quote}" — ${character} (${anime})`}
                                 </p>
                             </div>
