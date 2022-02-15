@@ -90,10 +90,10 @@ const Home = ({ quote, character, anime }: Props) => (
                                 <h1 className="title genshin-text">Tomio</h1>
                                 <p
                                     className="undertitle quote"
-                                    css={css`
-                                        font-size: 13.5px;
-                                        width: 25em;
-                                    `}
+                                    style={{
+                                        fontSize: '13.5px',
+                                        width: '25em'
+                                    }}
                                 >
                                     <i className="emoji googlecat"></i> {`"${quote}" — ${character} (${anime})`}
                                 </p>
