@@ -8,6 +8,7 @@ import type { GetServerSideProps } from 'next';
 import { Bars } from 'react-loader-spinner';
 import Image from 'next/image';
 import WildRift from '../public/wildrift.svg';
+import GenshinImpact from '../public/genshinimpact.svg';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 
@@ -50,8 +51,8 @@ const Home = ({ quote, character, anime }: Props) => (
         <div className="loading">
             <div className="fullscreen">
                 <div className="center-object">
-                    <h2 className="fira">Loading...</h2>
-                    <Bars color="#ffffff" width="128" height="128" />
+                    <Bars color="#ffffff" width="100" height="100" />
+                    <h2 className="fira">LOADING</h2>
                 </div>
             </div>
         </div>
@@ -64,7 +65,11 @@ const Home = ({ quote, character, anime }: Props) => (
             <div className="fullscreen">
                 <div
                     className="background"
-                    style={{ backgroundImage: 'url(/background.gif)', width: '100%', height: '1024px' }}
+                    css={css`
+                        background-image: url(/background.gif);
+                        width: 100%;
+                        height: 1024px;
+                    `}
                 ></div>
                 <div className="center-object">
                     <div className="container">
@@ -83,7 +88,10 @@ const Home = ({ quote, character, anime }: Props) => (
                             </div>
                             <div className="unset">
                                 <h1 className="title genshin-text">Tomio</h1>
-                                <p className="undertitle quote" style={{ fontSize: '13.5px', width: '25em' }}>
+                                <p className="undertitle quote" css={css`
+                                    font-size: 13.5px;
+                                    width: 25em;
+                                `}>
                                     <i className="emoji googlecat"></i> {`"${quote}" — ${character} (${anime})`}
                                 </p>
                             </div>
@@ -99,7 +107,7 @@ const Home = ({ quote, character, anime }: Props) => (
 
                                     return false;
                                 }}
-                                title="Discord Username"
+                                title="Discord"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -187,9 +195,23 @@ const Home = ({ quote, character, anime }: Props) => (
 
                                     return false;
                                 }}
-                                title="League of Legends: Wild Rift Username"
+                                title="League of Legends: Wild Rift"
                             >
                                 <Image src={WildRift} width="28" height="28" alt="League of Legends: Wild Rift" />
+                            </a>
+                        </div>
+                        <div>
+                            <a
+                                href="#"
+                                onClick={() => {
+                                    notify('Copied genshin UID!', '⚔️');
+                                    void navigator.clipboard.writeText('817063899');
+
+                                    return false;
+                                }}
+                                title="Genshin Impact"
+                            >
+                                <Image src={GenshinImpact} width="28" height="28" alt="Genshin Impact" />
                             </a>
                         </div>
                     </div>

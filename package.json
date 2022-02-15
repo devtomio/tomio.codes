@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
-        "build": "next build",
+        "build": "next build && next-sitemap",
         "start": "next start",
         "lint": "next lint"
     },
@@ -13,6 +13,7 @@
         "@next/bundle-analyzer": "latest",
         "next": "latest",
         "next-pwa": "latest",
+        "next-sitemap": "^2.1.15",
         "react": "latest",
         "react-dom": "latest",
         "react-hot-toast": "latest",
