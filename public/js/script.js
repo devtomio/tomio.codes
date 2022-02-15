@@ -6,6 +6,19 @@ window.addEventListener('scroll', () => {
     else logo.classList.remove('arrow--scrolled');
 });
 
+window.addEventListener('load', () => {
+    const loader = document.getElementsByClassName('loading')[0];
+    const main = document.getElementsByClassName('mainpage')[0];
+
+    setTimeout(() => {
+        loader.classList.add('fade-out');
+
+        setTimeout(() => {
+            main.style.display = 'block';
+        }, 500);
+    }, 1500);
+});
+
 if ('netscape' in window && / rv:/.test(navigator.userAgent)) {
     const el = document.getElementById('icons');
 

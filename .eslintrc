@@ -1,5 +1,6 @@
 {
     "extends": ["next", "next/core-web-vitals", "marine/prettier/jsx"],
+    "plugins": ["@emotion"],
     "rules": {
         "react/jsx-filename-extension": "off",
         "@next/next/no-img-element": "off",

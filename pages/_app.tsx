@@ -2,26 +2,13 @@ import '../styles/font.css';
 import '../styles/style.css';
 import '../styles/modesta.css';
 import '../styles/normalize.css';
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
 const App = ({ Component, pageProps }: AppProps) => (
     <>
         <Head>
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=G-56ZTZJYLND`} />
-            <script
-                dangerouslySetInnerHTML={{
-                    __html: `
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', 'G-56ZTZJYLND', {
-                            page_path: window.location.pathname,
-                        });
-                    `,
-                }}
-            />
-
             <title>Tomio</title>
             <meta name="description" content="The personal website of Tomio. https://github.com/1chiSensei" />
             <link rel="icon" href="/pfp.jpg" />
@@ -34,6 +21,9 @@ const App = ({ Component, pageProps }: AppProps) => (
                 href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Patrick+Hand&family=Arvo&display=swap"
                 rel="stylesheet"
             />
+
+            <link rel="preload" href="/fonts/genshin.woff" as="font" type="woff" crossOrigin="anonymous" />
+            <link rel="preload" href="/fonts/genshin.woff2" as="font" type="woff2" crossOrigin="anonymous" />
 
             <link rel="apple-touch-icon" href="/icons/apple-icon-180.png" />
 
