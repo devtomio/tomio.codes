@@ -8,7 +8,7 @@ import type { GetServerSideProps } from 'next';
 import { Bars } from 'react-loader-spinner';
 import Image from 'next/image';
 import WildRift from '../public/wildrift.svg';
-import GenshinImpact from '../public/genshinimpact.svg';
+import GenshinImpact from '../public/genshin.svg';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 
