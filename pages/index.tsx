@@ -8,7 +8,6 @@ import type { GetServerSideProps } from 'next';
 import { Bars } from 'react-loader-spinner';
 import Image from 'next/image';
 import WildRift from '../public/wildrift.svg';
-import GenshinImpact from '../public/genshin.svg';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 
@@ -201,20 +200,6 @@ const Home = ({ quote, character, anime }: Props) => (
                                 title="League of Legends: Wild Rift"
                             >
                                 <Image src={WildRift} width="28" height="28" alt="League of Legends: Wild Rift" />
-                            </a>
-                        </div>
-                        <div>
-                            <a
-                                href="#"
-                                onClick={() => {
-                                    notify('Copied genshin UID!', '⚔️');
-                                    void navigator.clipboard.writeText('817063899');
-
-                                    return false;
-                                }}
-                                title="Genshin Impact"
-                            >
-                                <Image src={GenshinImpact} width="28" height="28" alt="Genshin Impact" />
                             </a>
                         </div>
                     </div>
