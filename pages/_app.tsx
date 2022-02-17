@@ -1,10 +1,7 @@
-import '../styles/font.css';
-import '../styles/style.css';
-import '../styles/modesta.css';
-import '../styles/normalize.css';
-import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
+import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import Progress from 'nextjs-progressbar';
 
 const App = ({ Component, pageProps }: AppProps) => (
     <>
@@ -24,6 +21,7 @@ const App = ({ Component, pageProps }: AppProps) => (
 
             <link rel="preload" href="/fonts/genshin.woff" as="font" type="woff" crossOrigin="anonymous" />
             <link rel="preload" href="/fonts/genshin.woff2" as="font" type="woff2" crossOrigin="anonymous" />
+            <link rel="preload" href="/js/script.js" as="script" type="text/javascript" crossOrigin="anonymous" />
 
             <link rel="apple-touch-icon" href="/icons/apple-icon-180.png" />
 
@@ -187,6 +185,7 @@ const App = ({ Component, pageProps }: AppProps) => (
             <meta property="twitter:image" content="https://tomio.codes/pfp.jpg" />
         </Head>
 
+        <Progress color="#fff" options={{ showSpinner: false }} />
         <Component {...pageProps} />
     </>
 );

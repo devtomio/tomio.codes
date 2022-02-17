@@ -3,7 +3,10 @@ window.addEventListener('scroll', () => {
     const logo = document.getElementsByClassName('arrow')[0];
 
     if (scrollPos >= 100) logo.classList.add('arrow--scrolled');
-    else logo.classList.remove('arrow--scrolled');
+    else
+        try {
+            logo.classList.remove('arrow--scrolled');
+        } catch {}
 });
 
 window.addEventListener('load', () => {

@@ -42,5 +42,9 @@ module.exports = withBundleAnalyzer(
         experimental: {
             outputStandalone: true,
         },
+        images: {
+            domains: ['github-readme-stats.vercel.app'],
+        },
+        swcMinify: true,
     }),
 );

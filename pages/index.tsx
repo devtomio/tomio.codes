@@ -5,9 +5,9 @@ import Script from 'next/script';
 import Link from 'next/link';
 import toast, { Toaster } from 'react-hot-toast';
 import type { GetServerSideProps } from 'next';
-import { Bars } from 'react-loader-spinner';
 import Image from 'next/image';
 import WildRift from '../public/wildrift.svg';
+import Loader from 'react-spinners/BeatLoader';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 
@@ -50,8 +50,8 @@ const Home = ({ quote, character, anime }: Props) => (
         <div className="loading">
             <div className="fullscreen">
                 <div className="center-object">
-                    <Bars color="#ffffff" width="100" height="100" />
-                    <h2 className="fira">LOADING</h2>
+                    <Loader color="#ffffff" size={28} />
+                    <h1 className="fira text-xl">LOADING</h1>
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@ const Home = ({ quote, character, anime }: Props) => (
                                     className="undertitle quote"
                                     style={{
                                         fontSize: '13.5px',
-                                        width: '25em'
+                                        width: '25em',
                                     }}
                                 >
                                     <i className="emoji googlecat"></i> {`"${quote}" — ${character} (${anime})`}
@@ -206,11 +206,11 @@ const Home = ({ quote, character, anime }: Props) => (
                 </div>
 
                 <span className="info-button" onClick={() => scrollToEl('information')}>
-                    <div id="fade" className="arrow bounce">
+                    <div id="fade" className="arrow">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 481.32 291.98"
-                            className="white-fill"
+                            className="white-fill animate-bounce"
                             style={{ fill: 'white' }}
                         >
                             <path d="M466.5,15.5L466,15c-19.8-19.8-52-19.8-71.9,0L240.8,168.3L87.2,14.8C67.4-5,35.2-5,15.4,14.8l-0.5,0.5 C-5,35.2-5,67.4,14.8,87.2l186.6,186.6c0.9,1,1.8,2,2.7,3v0c3.8,3.8,8.1,6.9,12.7,9.3c17,9,38.1,7.7,53.9-3.9 c2.2-1.6,4.4-3.4,6.4-5.4L466.5,87.4C486.4,67.6,486.4,35.4,466.5,15.5z" />
@@ -240,26 +240,114 @@ const Home = ({ quote, character, anime }: Props) => (
                     <h1 className="title turquoise-text genshin-text">
                         <i className="emoji blobblewobble"></i> Projects:
                     </h1>
-                    <div className="info-container">
-                        <p>
-                            <Link href="https://npm.im/@1chi/fml.js">fml.js</Link> a simple utility to get FML quotes.
-                        </p>
-                        <p>
-                            <Link href="https://github.com/Shukaaku/hello-world">hello-world</Link> &#34;Hello,
-                            World!&#34; in multiple languages.
-                        </p>
-                        <p>
-                            <Link href="https://npm.im/img-url-to-imgur">img-url-to-imgur</Link> easily upload image
-                            urls to imgur.
-                        </p>
-                        <p>
-                            <Link href="https://github.com/1chiSensei/OAuth">OAuth</Link> provides OAuth examples to
-                            several auth providers.
-                        </p>
-                        <p>
-                            <Link href="https://github.com/Shukaaku/materialicons.css">materialicons.css</Link> provides
-                            some icons for your website.
-                        </p>
+                    <div className="max-w-6xl mx-auto">
+                        <section className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                            <Link href="/redirect?to=https://github.com/1chiSensei/diluc-bot" passHref>
+                                <img
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=1chiSensei&repo=diluc-bot&theme=radical"
+                                    alt="diluc-bot"
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                            <Link href="/redirect?to=https://github.com/1chiSensei/code-runner" passHref>
+                                <img
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=1chiSensei&repo=code-runner&theme=radical"
+                                    alt="code-runner"
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                            <Link href="/redirect?to=https://github.com/1chiSensei/is-railway" passHref>
+                                <img
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=1chiSensei&repo=is-railway&theme=radical"
+                                    alt="is-railway"
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                            <Link href="/redirect?to=https://github.com/1chiSensei/uuid" passHref>
+                                <img
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=1chiSensei&repo=uuid&theme=radical"
+                                    alt="uuid"
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                            <Link href="/redirect?to=https://github.com/1chiSensei/Tanaka" passHref>
+                                <img
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=1chiSensei&repo=Tanaka&theme=radical"
+                                    alt="Tanaka"
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                            <Link href="/redirect?to=https://github.com/1chiSensei/largest-package" passHref>
+                                <img
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=1chiSensei&repo=largest-package&theme=radical"
+                                    alt="largest-package"
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                            <Link href="/redirect?to=https://github.com/1chiSensei/shibe.online" passHref>
+                                <img
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=1chiSensei&repo=shibe.online&theme=radical"
+                                    alt="shibe.online"
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                            <Link href="/redirect?to=https://github.com/1chiSensei/hello-world" passHref>
+                                <img
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=1chiSensei&repo=hello-world&theme=radical"
+                                    alt="hello-world"
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                            <Link href="/redirect?to=https://github.com/yukikaze-bot/prompt" passHref>
+                                <img
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=yukikaze-bot&repo=prompt&theme=radical"
+                                    alt="prompt"
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                            <Link href="/redirect?to=https://github.com/yukikaze-bot/erlpack" passHref>
+                                <img
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=yukikaze-bot&repo=erlpack&theme=radical"
+                                    alt="erlpack"
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                            <Link href="/redirect?to=https://github.com/yukikaze-bot/yukikaze.tech" passHref>
+                                <img
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=yukikaze-bot&repo=yukikaze.tech&theme=radical"
+                                    alt="yukikaze.tech"
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                            <Link href="/redirect?to=https://github.com/yukikaze-bot/yukikaze" passHref>
+                                <img
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=yukikaze-bot&repo=yukikaze&theme=radical"
+                                    alt="yukikaze"
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                            <Link href="/redirect?to=https://github.com/yukikaze-bot/screenshot" passHref>
+                                <img
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=yukikaze-bot&repo=screenshot&theme=radical"
+                                    alt="screenshot"
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                            <Link href="/redirect?to=https://github.com/Shukaaku/materialicons.css" passHref>
+                                <img
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=Shukaaku&repo=materialicons.css&theme=radical"
+                                    alt="materialicons.css"
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                            <Link href="/redirect?to=https://github.com/Shukaaku/wikihow-sr" passHref>
+                                <img
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=Shukaaku&repo=wikihow-sr&theme=radical"
+                                    alt="wikihow-sr"
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                        </section>
                     </div>
                 </div>
                 <div className="box-container">
