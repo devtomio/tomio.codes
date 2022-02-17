@@ -19,8 +19,8 @@ const App = ({ Component, pageProps }: AppProps) => (
                 rel="stylesheet"
             />
 
-            <link rel="preload" href="/fonts/genshin.woff" as="font" type="woff" crossOrigin="anonymous" />
-            <link rel="preload" href="/fonts/genshin.woff2" as="font" type="woff2" crossOrigin="anonymous" />
+            <link rel="preload" href="/fonts/genshin.woff" as="font" type="font/woff" crossOrigin="anonymous" />
+            <link rel="preload" href="/fonts/genshin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
             <link rel="preload" href="/js/script.js" as="script" type="text/javascript" crossOrigin="anonymous" />
 
             <link rel="apple-touch-icon" href="/icons/apple-icon-180.png" />
