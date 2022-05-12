@@ -242,58 +242,58 @@ const Home = ({ quote, character, anime }: Props) => (
                     </h1>
                     <div className="max-w-6xl mx-auto">
                         <section className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-                            <Link href="/redirect?to=https://github.com/1chiSensei/diluc-bot" passHref>
+                            <Link href="/redirect?to=https://github.com/devtomio/diluc-bot" passHref>
                                 <img
-                                    src="https://github-readme-stats.vercel.app/api/pin/?username=1chiSensei&repo=diluc-bot&theme=radical"
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=devtomio&repo=diluc-bot&theme=radical"
                                     alt="diluc-bot"
                                     className="cursor-pointer"
                                 />
                             </Link>
-                            <Link href="/redirect?to=https://github.com/1chiSensei/code-runner" passHref>
+                            <Link href="/redirect?to=https://github.com/devtomio/code-runner" passHref>
                                 <img
-                                    src="https://github-readme-stats.vercel.app/api/pin/?username=1chiSensei&repo=code-runner&theme=radical"
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=devtomio&repo=code-runner&theme=radical"
                                     alt="code-runner"
                                     className="cursor-pointer"
                                 />
                             </Link>
-                            <Link href="/redirect?to=https://github.com/1chiSensei/is-railway" passHref>
+                            <Link href="/redirect?to=https://github.com/devtomio/is-railway" passHref>
                                 <img
-                                    src="https://github-readme-stats.vercel.app/api/pin/?username=1chiSensei&repo=is-railway&theme=radical"
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=devtomio&repo=is-railway&theme=radical"
                                     alt="is-railway"
                                     className="cursor-pointer"
                                 />
                             </Link>
-                            <Link href="/redirect?to=https://github.com/1chiSensei/uuid" passHref>
+                            <Link href="/redirect?to=https://github.com/devtomio/uuid" passHref>
                                 <img
-                                    src="https://github-readme-stats.vercel.app/api/pin/?username=1chiSensei&repo=uuid&theme=radical"
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=devtomio&repo=uuid&theme=radical"
                                     alt="uuid"
                                     className="cursor-pointer"
                                 />
                             </Link>
-                            <Link href="/redirect?to=https://github.com/1chiSensei/Tanaka" passHref>
+                            <Link href="/redirect?to=https://github.com/devtomio/Tanaka" passHref>
                                 <img
-                                    src="https://github-readme-stats.vercel.app/api/pin/?username=1chiSensei&repo=Tanaka&theme=radical"
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=devtomio&repo=Tanaka&theme=radical"
                                     alt="Tanaka"
                                     className="cursor-pointer"
                                 />
                             </Link>
-                            <Link href="/redirect?to=https://github.com/1chiSensei/largest-package" passHref>
+                            <Link href="/redirect?to=https://github.com/devtomio/largest-package" passHref>
                                 <img
-                                    src="https://github-readme-stats.vercel.app/api/pin/?username=1chiSensei&repo=largest-package&theme=radical"
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=devtomio&repo=largest-package&theme=radical"
                                     alt="largest-package"
                                     className="cursor-pointer"
                                 />
                             </Link>
-                            <Link href="/redirect?to=https://github.com/1chiSensei/shibe.online" passHref>
+                            <Link href="/redirect?to=https://github.com/devtomio/shibe.online" passHref>
                                 <img
-                                    src="https://github-readme-stats.vercel.app/api/pin/?username=1chiSensei&repo=shibe.online&theme=radical"
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=devtomio&repo=shibe.online&theme=radical"
                                     alt="shibe.online"
                                     className="cursor-pointer"
                                 />
                             </Link>
-                            <Link href="/redirect?to=https://github.com/1chiSensei/hello-world" passHref>
+                            <Link href="/redirect?to=https://github.com/devtomio/hello-world" passHref>
                                 <img
-                                    src="https://github-readme-stats.vercel.app/api/pin/?username=1chiSensei&repo=hello-world&theme=radical"
+                                    src="https://github-readme-stats.vercel.app/api/pin/?username=devtomio&repo=hello-world&theme=radical"
                                     alt="hello-world"
                                     className="cursor-pointer"
                                 />
@@ -389,8 +389,8 @@ const Home = ({ quote, character, anime }: Props) => (
                         ></path>
                     </svg>
                     <br />
-                    <Link href="https://github.com/1chiSensei/tomio.cdes/blob/main/LICENSE">LICENSE</Link> | Tomio ©
-                    2022 | <Link href="https://github.com/1chiSensei/tomio.codes">Source</Link>
+                    <Link href="https://github.com/devtomio/tomio.cdes/blob/main/LICENSE">LICENSE</Link> | Tomio ©
+                    2022 | <Link href="https://github.com/devtomio/tomio.codes">Source</Link>
                 </p>
             </footer>
 
